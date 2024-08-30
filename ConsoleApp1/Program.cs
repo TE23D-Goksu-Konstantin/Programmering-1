@@ -1,13 +1,13 @@
 ﻿string namn;
 bool food1;
-string food = "ee";    //fungerade inte utan ett startvärde
+string food = "ee";    //fungerade inte utan ett "startvärde"
 
 Console.WriteLine("Hej, vad heter du? Karl eller Kalle.");
 
 if (Console.ReadLine() == "Karl")
 {
     namn = "Karl";
-    food1 = true;
+    food1 = true;     //blir sant eller falskt beroende på användarens svar vilket resulterar i olika val.
 }
 else
  {
