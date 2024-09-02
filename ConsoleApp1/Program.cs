@@ -1,52 +1,58 @@
 ﻿string namn;
-bool food1;
-string food = "ee";    //fungerade inte utan ett "startvärde"
+bool food;
+string mat = "E";
 
-Console.WriteLine("Hej, vad heter du? Karl eller Kalle.");
+Console.BackgroundColor = ConsoleColor.DarkYellow;
+Console.ForegroundColor = ConsoleColor.Red;
 
-if (Console.ReadLine() == "Karl")
+Console.WriteLine("Hej, vad heter du? Erik eller Karl.");
+namn = Console.ReadLine();
+if (namn.ToLower() == "karl")
 {
     namn = "Karl";
-    food1 = true;     //blir sant eller falskt beroende på användarens svar vilket resulterar i olika val.
+    food = true;     //blir sant eller falskt beroende på användarens svar vilket resulterar i olika val.
 }
-else
+else 
  {
-namn = "Kalle";
-food1 = false;
+namn = "Erik";
+food = false;
 }       
 
-if (food1 == true)
+if (food == true)
 {
-    Console.WriteLine("Gillar Karl senap eller hundkött");
-    if (Console.ReadLine() == "senap")
+    Console.WriteLine("Hej Karl! Gillar du senap eller ketchup?");
+    mat = Console.ReadLine();
+    if (mat.ToLower() == "senap")
     {
-        food = "senap";
+        mat = "senap";
     }
     else
     {
-        food = "hundkött";
+        mat = "ketchup";
     }
 }
 
 
-if (food1 == false)
+if (food == false)
 {
-    Console.WriteLine("Gillar Kalle ketchup eller kattkött");   
-    if (Console.ReadLine() == "ketchup")  //kollar vad man skriver, "ketchup" = ketchup och allt annat blir kattkött
+    Console.WriteLine("Hej Erik! Gillar du hamburgare eller korv?");   
+    mat = Console.ReadLine();
+    if (mat.ToLower() == "hamburgare")  //kollar vad man skriver
     {
-        food = "ketchup";
+        mat = "hamburgare";
     }
     else
     {
-        food = "kattkött";
+        mat = "korv";
     }
 }
 
 
 
 
-Console.WriteLine($"{namn} gillar att äta {food}"); //skriver ut resultatet
-Console.ReadLine();
+Console.WriteLine($"Vad trevlig att träffas {namn}, jag gillar också att äta {mat}."); //resultatet
+Console.ReadLine(); //skriver ut resultatet
 
 
 //ctrl + * för snabb kommentar, shift + alt + upp och ner pil för kopiering, alt gr + 7 = {},
+// add gitignore, visual studio
