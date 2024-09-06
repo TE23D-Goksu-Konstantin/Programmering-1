@@ -1,51 +1,66 @@
-﻿string namn;
+﻿string namn = "";
 bool food;
 string mat = "E";
 
 Console.BackgroundColor = ConsoleColor.DarkYellow;
 Console.ForegroundColor = ConsoleColor.Red;
 
+
 Console.WriteLine("Hej, vad heter du? Erik eller Karl.");
-namn = Console.ReadLine();
+while (!namn.Equals("Erik", StringComparison.CurrentCultureIgnoreCase) && !namn.Equals("Karl", StringComparison.CurrentCultureIgnoreCase)) //använda quick fix för att fixa det
+{
+    namn = Console.ReadLine();
+}
+
 if (namn.ToLower() == "karl")
 {
     namn = "Karl";
     food = true;     //blir sant eller falskt beroende på användarens svar vilket resulterar i olika val.
 }
-else 
- {
-namn = "Erik";
-food = false;
-}       
+else
+{
+    namn = "Erik";
+    food = false;
+}
 
 if (food == true)
 {
-    Console.WriteLine("Hej Karl! Gillar du senap eller ketchup?");
-    mat = Console.ReadLine();
-    if (mat.ToLower() == "senap")
+    Console.WriteLine("Hej Karl! Gillar du katt eller hund?");
+    while (mat.ToLower() != "katt" && mat.ToLower() != "hund")
     {
-        mat = "senap";
+    mat = Console.ReadLine();
+    }
+    if (mat.ToLower() == "katt")
+    {
+        mat = "katt";
     }
     else
     {
-        mat = "ketchup";
+        mat = "hund";
     }
 }
 
 
 if (food == false)
 {
-    Console.WriteLine("Hej Erik! Gillar du hamburgare eller korv?");   
+
+    Console.WriteLine("Hej Erik! Gillar du hamburgare, korv eller sallad?");
+    while (mat.ToLower() != "hamburgare" && mat.ToLower() != "korv" && mat.ToLower() != "sallad")
+    {
     mat = Console.ReadLine();
+    }
     if (mat.ToLower() == "hamburgare")  //kollar vad man skriver
     {
         mat = "hamburgare";
     }
-    else
+    else if (mat.ToLower() == "korv")
     {
-        mat = "korv";
+        mat = "korv";                 //tre alternativ
     }
+    else
+        mat = "sallad";
 }
+
 
 
 
