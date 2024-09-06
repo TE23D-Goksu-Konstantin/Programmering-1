@@ -55,4 +55,3 @@ Console.ReadLine(); //skriver ut resultatet
 
 
 //ctrl + * för snabb kommentar, shift + alt + upp och ner pil för kopiering, alt gr + 7 = {},
-// add gitignore, visual studio
