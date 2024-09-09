@@ -1,9 +1,9 @@
 ﻿string namn = "";
 bool food;
-string mat = "E";
+string mat = "";
 
 Console.BackgroundColor = ConsoleColor.DarkYellow;
-Console.ForegroundColor = ConsoleColor.Red;
+Console.ForegroundColor = ConsoleColor.Red;               //text färg + bakgrundsfärg
 
 
 Console.WriteLine("Hej, vad heter du? Erik eller Karl.");
@@ -62,11 +62,13 @@ if (food == false)
 }
 
 
-
-
-
 Console.WriteLine($"Vad trevlig att träffas {namn}, jag gillar också att äta {mat}."); //resultatet
 Console.ReadLine(); //skriver ut resultatet
+
+
+
+
+
 
 
 //ctrl + * för snabb kommentar, shift + alt + upp och ner pil för kopiering, alt gr + 7 = {},
