@@ -76,7 +76,7 @@ else if(question == true & p < 3)
 Console.WriteLine("Ja du, det gick inte så bra. Mindre än 50% rätt, återuppta historia lektionerna nu.");
 Console.ReadLine();
 }
-else if(question == true & p == 0)
+else if(question == true || p == 0)
 {
 Loser();             //hämtar informationen från static void funktionen längre ner i koden
 }
@@ -99,4 +99,5 @@ __________               __                          __   .__  __
  |____|_  /\___  >___|  /__|   (____  /\_/   /____  >__|_ \__||__|  
         \/     \/     \/            \/            \/     \/         
 """);
+Console.ReadLine();
 }
