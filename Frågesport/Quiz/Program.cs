@@ -1,4 +1,8 @@
-﻿bool question = false;
+﻿static void spel(){
+    
+
+
+bool question = false;
 int p = 0;
 string svar = "";
 
@@ -84,6 +88,16 @@ else
 {
 Console.WriteLine("Okej, 50% rätt. Varken bra eller dåligt, kämpa på så är du nästan där!");
 Console.ReadLine();
+}
+
+}
+
+spel();
+Console.WriteLine("Vill du spela om?");
+string svar2 = Console.ReadLine();
+if (svar2.Equals("Ja", StringComparison.CurrentCultureIgnoreCase))      //loop, frågar ifall man vill spela om
+{
+    spel();
 }
 
 
