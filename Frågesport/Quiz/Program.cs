@@ -6,7 +6,7 @@ bool question = false;
 int p = 0;
 string svar = "";
 
-Console.WriteLine("Välkommen till Andra Världskriget Quiz om Tyskland! Idag ska du svara på 6 st frågor. Tryck på en valfri tangent för att starta,  lycka till!");
+Console.WriteLine("Välkommen till Andra Världskriget Quiz om Tyskland! Idag ska du svara på 6 st frågor. Tryck på en valfri tangent för attstarta, lycka till!");
 Console.ReadLine();
 
 Console.WriteLine("Vilken höguppsatt tysk officerare hade en sjukdom som bröt mot tyskarnas egna filosofi om genetik?");
