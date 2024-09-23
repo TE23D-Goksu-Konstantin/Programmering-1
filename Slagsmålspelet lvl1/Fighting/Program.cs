@@ -3,6 +3,30 @@ string namn2 = "";
 bool namn1val = false;
 bool restart = false;
 
+Thread.Sleep(1000);
+
+Console.WriteLine("""
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡤⠄⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣀⣴⠞⠋⢀⣠⣤⣴⣶⣶⣾⡿⠶⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣠⡾⠋⠀⢀⣴⠟⢉⣾⣿⣿⣿⡿⠿⠗⠀⠘⠉⠀⠀⠀⠀⠀⠀⠀
+⠀⢀⣾⠟⠀⠀⠀⠸⠏⠀⠛⠉⠉⠁⠀⠀⣀⣤⡀⣴⠶⢶⣶⣲⡶⠀⠀⠀
+⢀⣾⡟⠀⠀⠀⠀⠀⢀⡀⢰⡄⣶⢻⡷⣾⡏⢶⡆⣿⣋⣹⡿⠻⡦⠀⠀⠀
+⣸⣿⠀⠀⠀⣶⣟⡿⢸⡇⣸⡇⣿⠻⠷⠙⠛⠛⠁⠉⠁⠀⣀⣤⣤⣤⠀⠀
+⣿⣿⠀⠀⠀⣿⣯⡿⠘⠛⠛⠀⠀⣀⢀⣤⣄⠀⢰⣿⣦⣾⡿⢋⣉⣉⠀⠀
+⣿⣿⠀⠀⠀⠉⠁⢀⠀⢀⣶⡆⣾⣿⢸⣿⣿⣷⣼⣿⣿⣿⣧⣈⣹⣿⠀⠀
+⢸⣿⡆⠀⠀⠀⢸⣿⣰⣿⠏⠀⣿⣿⢸⣿⡇⠙⢿⣿⠇⠉⠛⠛⠛⠉⠀⠀
+⠈⢿⣿⠀⠀⠀⢸⣿⠻⣿⣷⡄⣿⠟⠘⠛⠁⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀
+⠀⠈⢿⠀⠀⠀⢸⠿⠀⠈⠉⠁⢀⣀⣀⣠⣤⣴⣶⣾⠆⣴⡿⠁⠀⣠⣄⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⢿⣿⣿⣿⣿⣿⣿⣿⣿⠾⠋⠀⢀⣴⣿⣿⠋
+⠀⠀⠀⠀⠀⠀⣤⣴⣤⡀⠀⠀⠈⠉⠙⠛⠉⠉⠉⠀⠀⣠⣴⣿⣿⠟⠁⠀
+⠀⠀⠀⠀⠀⠀⠈⠛⢿⣿⣿⣶⣤⣤⣤⣤⣤⣤⣶⣾⣿⣿⡿⠛⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠿⠿⠿⠿⠿⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀
+""");
+
+Thread.Sleep(2000);
+
+Console.Clear();
+
 Console.WriteLine("Välkommen, vänligen skriv ditt spelarnamn.");
 
 while (namn1val == false)
@@ -27,6 +51,10 @@ namn2val = Random.Shared.Next(1, 4); //Slumpar ett tal från 1-3 vilket resulter
 if (namn2val == 1)
 {
     namn2 = "Jonas";  
+    Console.WriteLine($"{namn2} är din motståndare");
+    Console.WriteLine("""
+
+    """);
 }
 else if (namn2val == 2)
 {
