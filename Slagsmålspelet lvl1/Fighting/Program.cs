@@ -1,5 +1,5 @@
 ﻿string namn1 = "";
-string namn2 = "Jonas";
+string namn2 = "";
 bool namn1val = false;
 bool restart = false;
 
@@ -21,6 +21,23 @@ while (namn1val == false)
     }
 }
 
+Random namngenerator = new Random();
+int namn2val = 0;
+namn2val = Random.Shared.Next(1, 4); //Slumpar ett tal från 1-3 vilket resulterar i 3 olika namn
+if (namn2val == 1)
+{
+    namn2 = "Jonas";  
+}
+else if (namn2val == 2)
+{
+    namn2 = "Skeeby-dee";
+}
+else
+{
+    namn2 = "Konstantin Opel";
+}
+
+
 
 while (restart == true)
 {
@@ -29,11 +46,11 @@ while (restart == true)
     int hp1 = 100;
     int hp2 = 100;
 
-    Random generator = new Random();
+    Random dmggenerator = new Random();
 
     Console.Clear();
 
-    Console.WriteLine($"Idag ska två deltagare vid namn {namn1} och Jonas slåss, deltagarna startar med 100 hp.");
+    Console.WriteLine($"Idag ska två deltagare vid namn {namn1} och {namn2} slåss, deltagarna startar med 100 hp.");
     Console.WriteLine("Tryck på enter för att starta striden!");
 
     Console.ReadLine();
