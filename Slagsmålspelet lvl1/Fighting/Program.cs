@@ -1,7 +1,27 @@
-﻿string namn1 = "Bertil";
+﻿string namn1 = "";
 string namn2 = "Jonas";
+bool namn1val = false;
+bool restart = false;
 
-bool restart = true;
+Console.WriteLine("Välkommen, vänligen skriv ditt spelarnamn.");
+
+while (namn1val == false)
+{
+    namn1 = Console.ReadLine();
+    if (string.IsNullOrWhiteSpace(namn1))   //Ifall userinput inte är något (alltså null), så går det inte att gå framåt vilket betyder att man måste skriva sitt namn
+    {
+        Console.WriteLine("Nej. Gör om, gör rätt");
+    }
+    else 
+    {
+        Console.WriteLine($"Välkommen {namn1}, tryck på enter för att gå vidare!");
+        Console.ReadLine();
+        namn1val = true;
+        restart = true;
+    }
+}
+
+
 while (restart == true)
 {
 
@@ -13,7 +33,7 @@ while (restart == true)
 
     Console.Clear();
 
-    Console.WriteLine("Idag ska två deltagare vid namn Bertil och Jonas slåss, deltagarna startar med 100 hp.");
+    Console.WriteLine($"Idag ska två deltagare vid namn {namn1} och Jonas slåss, deltagarna startar med 100 hp.");
     Console.WriteLine("Tryck på enter för att starta striden!");
 
     Console.ReadLine();
@@ -78,7 +98,7 @@ while (restart == true)
     else
     {
         _ = restart == false;
-        Environment.Exit(0);
+        Environment.Exit(0);           //ifall spelaren ej vill köra om programmet så stängs konsolen ner
     }
 }
 
