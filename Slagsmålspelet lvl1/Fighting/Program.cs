@@ -1,26 +1,24 @@
-﻿string namn1 = "";
+﻿using Microsoft.VisualBasic;
+
+string namn1 = "";
 string namn2 = "";
 bool namn1val = false;
 bool restart = false;
+int plånbok = 1000;
+int bet = 0;
+bool betting = true;
 
-Thread.Sleep(1000);
+Thread.Sleep(1000); //timer, väntar 1 sekund innan den fortsätter
 
 Console.WriteLine("""
-⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡤⠄⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⣀⣴⠞⠋⢀⣠⣤⣴⣶⣶⣾⡿⠶⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⣠⡾⠋⠀⢀⣴⠟⢉⣾⣿⣿⣿⡿⠿⠗⠀⠘⠉⠀⠀⠀⠀⠀⠀⠀
-⠀⢀⣾⠟⠀⠀⠀⠸⠏⠀⠛⠉⠉⠁⠀⠀⣀⣤⡀⣴⠶⢶⣶⣲⡶⠀⠀⠀
-⢀⣾⡟⠀⠀⠀⠀⠀⢀⡀⢰⡄⣶⢻⡷⣾⡏⢶⡆⣿⣋⣹⡿⠻⡦⠀⠀⠀
-⣸⣿⠀⠀⠀⣶⣟⡿⢸⡇⣸⡇⣿⠻⠷⠙⠛⠛⠁⠉⠁⠀⣀⣤⣤⣤⠀⠀
-⣿⣿⠀⠀⠀⣿⣯⡿⠘⠛⠛⠀⠀⣀⢀⣤⣄⠀⢰⣿⣦⣾⡿⢋⣉⣉⠀⠀
-⣿⣿⠀⠀⠀⠉⠁⢀⠀⢀⣶⡆⣾⣿⢸⣿⣿⣷⣼⣿⣿⣿⣧⣈⣹⣿⠀⠀
-⢸⣿⡆⠀⠀⠀⢸⣿⣰⣿⠏⠀⣿⣿⢸⣿⡇⠙⢿⣿⠇⠉⠛⠛⠛⠉⠀⠀
-⠈⢿⣿⠀⠀⠀⢸⣿⠻⣿⣷⡄⣿⠟⠘⠛⠁⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀
-⠀⠈⢿⠀⠀⠀⢸⠿⠀⠈⠉⠁⢀⣀⣀⣠⣤⣴⣶⣾⠆⣴⡿⠁⠀⣠⣄⡀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⢿⣿⣿⣿⣿⣿⣿⣿⣿⠾⠋⠀⢀⣴⣿⣿⠋
-⠀⠀⠀⠀⠀⠀⣤⣴⣤⡀⠀⠀⠈⠉⠙⠛⠉⠉⠉⠀⠀⣠⣴⣿⣿⠟⠁⠀
-⠀⠀⠀⠀⠀⠀⠈⠛⢿⣿⣿⣶⣤⣤⣤⣤⣤⣤⣶⣾⣿⣿⡿⠛⠁⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠿⠿⠿⠿⠿⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀
+     _                 _    __ _       _     _            
+    | |               | |  / _(_)     | |   | |           
+ ___| |_ _ __ ___  ___| |_| |_ _  __ _| |__ | |_ ___ _ __ 
+/ __| __| '__/ _ \/ _ \ __|  _| |/ _` | '_ \| __/ _ \ '__|
+\__ \ |_| | |  __/  __/ |_| | | | (_| | | | | ||  __/ |   
+|___/\__|_|  \___|\___|\__|_| |_|\__, |_| |_|\__\___|_|   
+                                  __/ |                   
+                                 |___/                    
 """);
 
 Thread.Sleep(2000);
@@ -41,9 +39,11 @@ while (namn1val == false)
         Console.WriteLine($"Välkommen {namn1}, tryck på enter för att gå vidare!");
         Console.ReadLine();
         namn1val = true;
-        restart = true;
+        //restart = true;
     }
 }
+
+Thread.Sleep(100);
 
 Random namngenerator = new Random();
 int namn2val = 0;
@@ -52,18 +52,26 @@ if (namn2val == 1)
 {
     namn2 = "Jonas";  
     Console.WriteLine($"{namn2} är din motståndare");
-    Console.WriteLine("""
-
-    """);
+    Thread.Sleep(1000);
+    Console.Clear();
 }
 else if (namn2val == 2)
 {
     namn2 = "Skeeby-dee";
+    Console.WriteLine($"{namn2} är din motståndare");
+    Thread.Sleep(1000);
+    Console.Clear();
 }
 else
 {
     namn2 = "Konstantin Opel";
+    Console.WriteLine($"{namn2} är din motståndare");
+    Thread.Sleep(1000);
+    Console.Clear();
 }
+
+
+    restart = true;
 
 
 
@@ -77,6 +85,26 @@ while (restart == true)
     Random dmggenerator = new Random();
 
     Console.Clear();
+
+    while (betting == true)
+{
+    if (plånbok == 0)
+    {
+        Console.WriteLine($"Ser ut som att du har slut på pengar men du kan fortfarande spela utan att satsa");
+        Thread.Sleep(4000);
+        betting = false;
+        Console.Clear();
+    }
+    else
+    {
+    Console.WriteLine($"Du har {plånbok}kr kvar, skriv in hur mycket du vill satsa på din spelare");
+    String p = Console.ReadLine();
+    int.TryParse(p, out bet);
+    plånbok -= bet;
+    betting = false;
+    Console.Clear();
+    }
+}
 
     Console.WriteLine($"Idag ska två deltagare vid namn {namn1} och {namn2} slåss, deltagarna startar med 100 hp.");
     Console.WriteLine("Tryck på enter för att starta striden!");
@@ -125,6 +153,8 @@ while (restart == true)
     else if (hp1 > 0)
     {
         Console.WriteLine($"{namn1} vann med {hp1} återstående hp!");
+        plånbok += bet*2;
+        Console.WriteLine($"Du har nu {plånbok}kr");
     }
     else if (hp2 > 0)
     {
@@ -139,6 +169,8 @@ while (restart == true)
     {
         hp1 = 100;
         hp2 = 100;
+        bet = 0;
+        betting = true;
     }
     else
     {
