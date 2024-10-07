@@ -50,7 +50,15 @@ int namn2val = 0;
 namn2val = Random.Shared.Next(1, 4); //Slumpar ett tal från 1-3 vilket resulterar i 3 olika namn
 if (namn2val == 1)
 {
-    namn2 = "Jonas";  
+    namn2 = "Jonas"; 
+    Console.WriteLine("Din motståndare är,");
+    Thread.Sleep(200);
+    Console.WriteLine("3...");
+    Thread.Sleep(500);
+    Console.WriteLine("2...");
+    Thread.Sleep(500);
+    Console.WriteLine("1...");
+    Thread.Sleep(500);
     Console.WriteLine($"{namn2} är din motståndare");
     Thread.Sleep(1000);
     Console.Clear();
@@ -58,6 +66,14 @@ if (namn2val == 1)
 else if (namn2val == 2)
 {
     namn2 = "Skeeby-dee";
+    Console.WriteLine("Din motståndare är,");
+    Thread.Sleep(200);
+    Console.WriteLine("3...");
+    Thread.Sleep(500);
+    Console.WriteLine("2...");
+    Thread.Sleep(500);
+    Console.WriteLine("1...");
+    Thread.Sleep(500);
     Console.WriteLine($"{namn2} är din motståndare");
     Thread.Sleep(1000);
     Console.Clear();
@@ -65,6 +81,14 @@ else if (namn2val == 2)
 else
 {
     namn2 = "Konstantin Opel";
+    Console.WriteLine("Din motståndare är,");
+    Thread.Sleep(200);
+    Console.WriteLine("3...");
+    Thread.Sleep(500);
+    Console.WriteLine("2...");
+    Thread.Sleep(500);
+    Console.WriteLine("1...");
+    Thread.Sleep(500);
     Console.WriteLine($"{namn2} är din motståndare");
     Thread.Sleep(1000);
     Console.Clear();
