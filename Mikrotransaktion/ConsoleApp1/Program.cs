@@ -72,12 +72,19 @@ while(plånbok > 0)
     Console.WriteLine("Bok: 10kr");
     Console.WriteLine("Tryck på 1 för att köpa en bok");
     Console.WriteLine("");
-    Console.WriteLine("Yxa: 23kr");
+    Console.WriteLine("Yxa: 20kr");
     Console.WriteLine("Tryck på 2 för att köpa en yxa");
     Console.WriteLine("");
     Console.WriteLine("PPSH-41: 40kr");
     Console.WriteLine("Tryck på 3 för att köpa en PPSH-41");
     Console.WriteLine("");
+    Console.WriteLine(""" Tryck på "n" för att stänga programmet """);
+    Console.WriteLine("");
+        ConsoleKeyInfo info = Console.ReadKey();
+    if (info.Key == ConsoleKey.N)
+    {
+        Environment.Exit(0);
+    }
     butik = false;
     }
  
@@ -229,4 +236,6 @@ if(plånbok == 0)
     Thread.Sleep(3000);
     Environment.Exit(0);
     }
+
+
 
