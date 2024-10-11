@@ -78,13 +78,7 @@ while(plånbok > 0)
     Console.WriteLine("PPSH-41: 40kr");
     Console.WriteLine("Tryck på 3 för att köpa en PPSH-41");
     Console.WriteLine("");
-    Console.WriteLine(""" Tryck på "n" för att stänga programmet """);
-    Console.WriteLine("");
-        ConsoleKeyInfo info = Console.ReadKey();
-    if (info.Key == ConsoleKey.N)
-    {
-        Environment.Exit(0);
-    }
+    Console.WriteLine("""Tryck på "N" för att stänga programmet""");
     butik = false;
     }
  
@@ -96,22 +90,22 @@ while(plånbok > 0)
     Console.WriteLine(""" 
     █▒▒▒▒▒▒▒▒▒
     """);
-        Thread.Sleep(600);
+        Thread.Sleep(300);
         Console.Clear();
     Console.WriteLine("""
     ████▒▒▒▒▒▒
     """);
-        Thread.Sleep(1000);
+        Thread.Sleep(600);
         Console.Clear();
     Console.WriteLine("""
     █████▒▒▒▒▒
     """);
-        Thread.Sleep(300);
+        Thread.Sleep(200);
         Console.Clear();
     Console.WriteLine("""
     ████████▒▒
     """);
-        Thread.Sleep(800);
+        Thread.Sleep(500);
         Console.Clear();
     Console.WriteLine("""
     ██████████
@@ -125,8 +119,6 @@ while(plånbok > 0)
     string nyval = Console.ReadLine();
     int.TryParse(nyval, out val2);
     }
-
-
 
 
     if(val2 == 1)
@@ -225,15 +217,346 @@ if(plånbok == 0)
     Console.WriteLine("""
     ██████████
     """);
-    Thread.Sleep(100);
+    Thread.Sleep(50);
     Console.Clear();
+    Console.WriteLine("D");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du h");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du ha");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har ");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har s");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har sl");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slu");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut p");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på ");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på p");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pe");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pen");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på peng");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på penga");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar ");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar o");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar oc");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och ");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och l");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lä");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och läm");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämn");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämna");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar ");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar b");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar bu");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar but");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar buti");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar butik");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar butike");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar butiken");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar butiken.");
+        Thread.Sleep(100);
+    Console.Clear();
+    Console.WriteLine("Du har slut på pengar och lämnar butiken..");
+        Thread.Sleep(100);
     Console.Clear();
     Console.WriteLine("Du har slut på pengar och lämnar butiken...");
+    
+    Thread.Sleep(2300);
+    Console.Clear();
+        Console.WriteLine($"D");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du ");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du h");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du ha");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du ha");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har ");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har k");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har kö");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köp");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt");
+    Thread.Sleep(200);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} ");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} b");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} bö");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böc");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böck");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcke");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker,");
+    Thread.Sleep(200);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} ");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} y");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yx");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxo");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor o");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor oc");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och");
+    Thread.Sleep(200);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} ");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} P");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PP");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPS");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH-");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH-4");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH-41");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH-41.");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH-41..");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH-41...");
+    Thread.Sleep(100);
+    Console.Clear();
+        Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH-41....");
     Thread.Sleep(3000);
-    Console.WriteLine($"Du har köpt {boke} böcker, {yxe} yxor och {pew} PPSH-41.");
+    Console.Clear();
+        Console.WriteLine("V");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Vä");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Väl");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välk");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välko");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkom");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkomm");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkomme");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen å");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen åt");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen åte");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen åter");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen åter -");
+        Thread.Sleep(200);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen åter - L");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen åter - Lu");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen åter - Lud");
+        Thread.Sleep(100);
+        Console.Clear();
+
+ 
+        Console.WriteLine("Välkommen åter - Ludv");
+        Thread.Sleep(100);
+        Console.Clear();
+
+        Console.WriteLine("Välkommen åter - Ludvi");
+        Thread.Sleep(100);
+        Console.Clear();
+
+
+        Console.WriteLine("Välkommen åter - Ludvig");
+        Thread.Sleep(100);
+
     Thread.Sleep(3000);
-    Console.WriteLine("Välkommen åter - Bigfoot");
-    Thread.Sleep(3000);
+    
+    Console.WriteLine("""
+    
+
+                     _______
+              ,,--''         ''--,,
+           ,-'                     '-,
+          /                           \
+          |                           |
+          |                           |
+          | |\                     /| |
+     |\   | | \                   / | |   /|
+     | \  | |  '-,             ,-'  | |  / |
+     |  '-| |     '-,       ,-'     | |-'  |
+     |      |        \     /        |      |
+     |      |    ,-;;/     \;;-,    |      |
+     |  ,'   \__|;;;/ ,   , \;;;|__/   ',  |
+      \/              |   |              \/
+      /             ,-|   |-,             \
+      ;             \       /             ;
+       \             '-, ,-'             /
+        '-,,            '            ,,-'
+            '-,    \'-,           ,-'
+               ',   \  ''--,,   ,'
+                 \   ''--,, /  /
+                 |\           /|
+                 |(           )|
+                 |'-,       ,-'|  
+                     ''-,-'' 
+
+
+    """);
+    Thread.Sleep(30);
     Environment.Exit(0);
     }
 
